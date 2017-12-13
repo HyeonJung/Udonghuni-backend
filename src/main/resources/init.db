@@ -1,0 +1,6 @@
+CREATE DATABASE IF NOT EXISTS `udonghuni` COLLATE 'utf8_general_ci';
+
+create user 'udonghuni'@'%' identified by 'Wlehdgns12#$';
+create user 'udonghuni'@'localhost' identified by 'Wlehdgns12#$';
+
+grant all privileges on udonghuni.* to 'udonghuni'@'%';
