@@ -7,7 +7,12 @@ spring:
     url: jdbc:mariadb://localhost:3306/udonghuni
     username: udonghuni
     password: 'Wlehdgns12#$'
-  
+  http:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+server:
+  port: 8090  
 imagePath: C:/udonghuni/bucket/
 ---
 spring:
@@ -28,3 +33,4 @@ spring:
      connection-properties: autoReconnect=true;useUnicode=true;characterEncoding=utf-8
 logging:
   config: classpath:logback-production.xml
+imagePath: /home/hyeonjung/data/
